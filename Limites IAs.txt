@@ -1,0 +1,12 @@
+Erro 1: Limite de caracteres excedido
+A API do ChatGPT tem um limite de 2048 caracteres por mensagem, tanto para a entrada como para a saída. Isso significa que se você enviar uma mensagem muito longa ou tentar gerar uma resposta muito longa, a API vai retornar um erro e não vai completar a operação.
+Para evitar esse erro, você deve verificar o tamanho da sua mensagem antes de enviá-la ou solicitar uma resposta, e se necessário, dividir a sua mensagem em partes menores.
+https://chatgpt.com.br/como-usar-a-api-do-chatgpt/#:~:text=A%20API%20do%20ChatGPT%20tem,entrada%20como%20para%20a%20sa%C3%ADda.
+
+
+Aqui estão os limites da API nos modelos subjacentes: https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#gemini-models
+Gemini 1.0 Pro - 32760 tokens de entrada, 8192 tokens de saída (usado no Gemini gratuito)
+Gemini 1.0 Ultra - 8192 tokens de entrada, 2048 tokens de saída (eles podem estar usando uma variação de 32k tokens para o Gemini Advanced, enquanto os 8k listados são para empresas e desenvolvedores por meio da API)
+Gemini 1.5 Pro - 1 milhão de tokens de entrada, 8192 tokens de saída (ainda não disponível, pré-visualização privada apenas para empresas e desenvolvedores aprovados, limitado ao uso da API)
+
+1 token ~= 3-4 caracteres (média) ou seja no modelo que está sendo usando seriam 98.280 caracteres de entrada
